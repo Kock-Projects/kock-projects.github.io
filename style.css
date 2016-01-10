@@ -4,3 +4,15 @@ body {
   background-image: url("http://i.imgur.com/DpypMCZ.png");
   color: white;
 }
+a:link {
+  color: #DDDDFF;
+}
+a:visited {
+  color: #FFDDFF;
+}
+a:hover {
+  color: #FFFFFF;
+}
+a:active {
+  color: #EEEEEE;
+}
