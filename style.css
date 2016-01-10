@@ -16,3 +16,10 @@ a:hover {
 a:active {
   color: #EEEEEE;
 }
+#desc {
+  width: 800px;
+  padding: 25px;
+  border: 5px solid navy;
+  margin: 25px;
+  background-color: #11000000;
+}
