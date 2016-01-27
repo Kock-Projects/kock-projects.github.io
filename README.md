@@ -1,2 +1,2 @@
 # kock-projects.github.io
-Kock Projects Github Pages
+The official website of Kock Projects
