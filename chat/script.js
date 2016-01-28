@@ -1,7 +1,11 @@
-function gRN() {
-	return Math.floor(Math.random() * (9 - 0 + 1)) + 0;
+function gRN(n) {
+	rn = "";
+	for (i = 0; i < n; i++) {
+		rn += Math.floor(Math.random() * (9 - 0 + 1)) + 0;
+	}
+	return rn;
 }
-gNick = "Kock" + gRN().toString() + gRN().toString() + gRN().toString() + gRN().toString() + gRN().toString();
+gNick = "Kock" + gRN(5);
 function ncheck(nick) {
 	nchar = /^[\w\\\[\]_{}^`|\-]*$/;
 	ichar = /[\d\-]/;
@@ -15,6 +19,27 @@ function ncheck(nick) {
 		return true;
 	}
 }
+function kock(fs) {
+	nick = document.getElementById("nick").value;
+	if (fs) {
+		if (ncheck(nick)) {
+			window.top.location.href = "https://qchat.rizon.net/?nick=" + nick + "&channels=Kock&lightness=-87.5&tlightness=100";
+		} else {
+			fNick();
+			return;
+		}
+	} else {
+		if (ncheck(nick)) {
+			window.location.href = "https://qchat.rizon.net/?nick=" + nick + "&channels=Kock&lightness=-87.5&tlightness=100";
+		} else {
+			fNick();
+			return;
+		}
+	}
+}
+function fNick() {
+	document.getElementById("nick").focus();
+}
 window.onload = function() {
 	iframe = window.top.location != window.self.location;
 	if (iframe) {
@@ -23,20 +48,11 @@ window.onload = function() {
 		document.body.removeChild(document.getElementById("confs"));
 	}
 	document.getElementById("nick").value = gNick;
+	fNick();
 	document.getElementById("connect").onclick = function() {
-		nick = document.getElementById("nick").value;
-		if (ncheck(nick)) {
-			window.location.href = "https://qchat.rizon.net/?nick=" + nick + "&channels=Kock&lightness=-87.5&tlightness=100";
-		} else {
-			return;
-		}
+		kock(false);
 	}
 	document.getElementById("confs").onclick = function() {
-		nick = document.getElementById("nick").value;
-		if (ncheck(nick)) {
-			window.top.location.href = "https://qchat.rizon.net/?nick=" + nick + "&channels=Kock&lightness=-87.5&tlightness=100";
-		} else {
-			return;
-		}
+		kock(true);
 	}
 }
