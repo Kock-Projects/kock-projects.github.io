@@ -22,12 +22,7 @@ function ncheck(nick) {
 function kock(fs) {
 	nick = document.getElementById("nick").value;
 	if (fs) {
-		if (ncheck(nick)) {
-			window.top.location.href = "https://qchat.rizon.net/?nick=" + nick + "&channels=Kock&lightness=-87.5&tlightness=100";
-		} else {
-			fNick();
-			return;
-		}
+		window.top.location.href = "gateway";
 	} else {
 		if (ncheck(nick)) {
 			window.location.href = "https://qchat.rizon.net/?nick=" + nick + "&channels=Kock&lightness=-87.5&tlightness=100";
