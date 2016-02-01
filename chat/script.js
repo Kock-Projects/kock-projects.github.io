@@ -25,7 +25,7 @@ function kock(fs) {
 		window.top.location.href = "gateway";
 	} else {
 		if (ncheck(nick)) {
-			window.location.href = "https://qchat.rizon.net/?nick=" + nick + "&channels=Kock&lightness=-87.5&tlightness=100";
+			window.location.href = "https://qchat.rizon.net/?nick=" + nick + "&channels=Kock&saturation=-9&lightness=-86&tlightness=100";
 		} else {
 			fNick();
 			return;
