@@ -12,10 +12,12 @@ body {
   user-select: none;
 }
 #nick {
+  font-family: Arial, sans-serif;
   border-radius: 2px;
   border-style: solid;
   border-color: #FFF;
   box-shadow: 1px 1px 2px rgb(8, 8, 8);
+  outline: 0;
 }
 #nick:focus {
   box-shadow: 2px 2px 3px rgb(8, 8, 8);
@@ -25,6 +27,7 @@ body {
   padding: 6px;
   background-color: rgb(64, 64, 64);
   text-transform: uppercase;
+  font-family: Arial, sans-serif;
   font-size: 12px;
   font-weight: bold;
   box-shadow: 1px 1px 2px rgb(8, 8, 8);
