@@ -1,21 +1,20 @@
 body {
   text-align: center;
   font-family: arial, sans-serif;
-  background-image: url("http://i.imgur.com/REaHCet.png");
-  background-attachment: fixed;
-  color: white;
+  background: #800;
+  color: #FFF;
 }
 a:link {
-  color: #DDDDFF;
+  color: #DDF;
 }
 a:visited {
-  color: #FFDDFF;
+  color: #FDF;
 }
 a:hover {
-  color: #FFFFFF;
+  color: #FFF;
 }
 a:active {
-  color: #EEEEEE;
+  color: #EEE;
 }
 #desc {
   width: 800px;
@@ -41,11 +40,12 @@ a:active {
   padding: 6px;
   background-color: rgb(64, 64, 64);
   text-transform: uppercase;
+  font-family: arial, sans-serif;
   font-size: 12px;
   font-weight: bold;
   box-shadow: 1px 1px 2px rgb(8, 8, 8);
   border-radius: 2px;
-  color: #FFFFFF;
+  color: #FFF;
 }
 #nav li a:hover, .btn:hover {
   background-color: rgb(96, 96, 96);
